@@ -1,0 +1,35 @@
+div.displayDeck {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(41,44,51);
+  color: rgb(247,247,248);
+  width: 7em;
+  padding: .25em;
+  box-sizing:content-box;
+  border-radius: .25em;
+}
+
+span {
+  font-size: .897em;
+  letter-spacing: .0225em;
+  line-height: 140%;
+  text-align: right;
+}
+
+span.bigger{
+  font-size: 1.5em;
+}
+
+.container {
+  height: 100vh
+}
+
+.container.flex--aMid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--aMid .displayDeck{
+  max-width: 50%;
+}
