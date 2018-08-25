@@ -14,18 +14,18 @@ export default class Camera extends Component {
       program:'A'
     }
   }
+  increment = (propName, steps = 1 ) => {
+    this.setState({
+      [propName]: this.state[propName] * steps
+    })
+  }
 
   render() {
     return (
       <div>
-      <Display
-        load={this.state}
-        // aperture={1.1}
-        // shutter={2000}
-        // iso={320}
-        // program={'A'}
-        // evComp={.66}
-        />
+      <button onClick={()=>this.increment('aperture', 2)}>Click to Step down Aperture</button>
+
+      <Display load={this.state} />
         {this.props.children}
       </div>
     );

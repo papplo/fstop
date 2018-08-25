@@ -14,6 +14,7 @@ span {
   letter-spacing: .0225em;
   line-height: 140%;
   text-align: right;
+  transition: all .1s ease;
 }
 
 span.bigger{
