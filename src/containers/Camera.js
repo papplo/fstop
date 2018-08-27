@@ -25,7 +25,7 @@ export default class Camera extends Component {
       <div>
       <button onClick={()=>this.increment('aperture', 2)}>Click to Step down Aperture</button>
 
-      <Display load={this.state} />
+      <Display state={this.state} />
         {this.props.children}
       </div>
     );
